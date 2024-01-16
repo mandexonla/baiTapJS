@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./buoi2.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form name="form_diem" action="" method="post">
+            <div class="box-form"> <label for="name">Hãy nhập tên của bạn:</label>
+                <input class="txt_name" name="test_name" type="text" id="name">
+            </div>
+            <div class="box-form">
+                <label class="label_diem" for="score">Hãy nhập điểm của bạn:</label>
+                <input class="txt_diem" name="test_score" type="text" id="score">
+            </div>
+            <div id="kq"></div>
+            <div class="btn">
+                <input class="btn-sb" type="button" value="Gửi" onclick="diem(test_name.value,test_score.value)">
+            </div>
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

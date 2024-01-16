@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    background-color: rgb(220, 220, 220);
+    font-size: 13px;
+}
+
+.container {
+    position: absolute;
+    width: 400px;
+    min-height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgb(99, 96, 96);
+}
+
+.container p {
+    text-align: center;
+    margin: 30px 0 40px 0;
+    padding: 0;
+    color: blue;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+.user-box {
+    margin: 30px;
+}
+
+.user-box label {
+    position: relative;
+    top: -18px;
+    right: 260px;
+}
+
+.input_text {
+    width: 275px;
+    position: relative;
+    left: 25px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+} 
+
+.box-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 30px 0;
+
+}
+
+.input_submit {
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: 20px;
+
+}
+
+.input_submit:hover {
+    outline: none;
+    border: none;
+    box-shadow: 0 5px 10px rgb(169, 169, 169);
+    background-color: transparent;
+}
+
+.input_reset {
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.input_reset:hover {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    box-shadow: 0 5px 10px rgb(169, 169, 169);
+}

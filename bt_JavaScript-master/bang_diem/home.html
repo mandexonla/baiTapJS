@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng điểm của em</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <p>BẢNG ĐIỂM CỦA EM</p>
+        <form action="">
+            <div class="user-box">
+                <input id="" class="input_text" type="text" name="ten" required="" >
+                <label>Họ tên</label>
+            </div>
+            <div class="user-box">
+                <input id="hocKi1" class="input_text" type="text" name="diemHk1" required="">
+                <label>Học kì I</label>
+            </div>
+            <div class="user-box">
+                <input id="hocKi2" class="input_text" type="text" name="diemHk2" required="">
+                <label>Học kì II:</label>
+            </div>
+            <!-- <div class="user-box">
+                <input id="namHoc" class="input_text" type="number" min="1" max="4" name="namHoc" required="">
+                <label>Year:</label>
+            </div> -->
+            <div class="user-box">
+
+                <input id="tongKet" class="input_text" type="text" name="" required="">
+                <label>Tổng:</label>
+            </div>
+            <div id="ket_qua" class="user-box">
+                <input id="xepLoai" class="input_text" type="text" name="" required="">
+                <label>Xếp loại:</label>
+            </div>
+            <!-- <div id="ket_qua"></div> -->
+            <div class="box-submit">
+                <input  class="input_submit" type="button" value="Gửi" onclick="tongDiemTrungBinh(ten.value,diemHk1.value,diemHk2.value)">
+                <input class="input_reset" type="reset" value="Cancel">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
