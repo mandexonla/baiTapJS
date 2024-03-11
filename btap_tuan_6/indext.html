@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="main.js"></script>
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg {
+            background-color: rgb(36, 122, 122);
+            min-height: 100vh; 
+            padding-bottom: 20px; 
+        }
+
+        .label {
+            margin-left: 16px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        .action button
+        {
+            margin-left: 16px;
+            color: red;
+        }
+
+        .kk
+        {
+            margin-right: 16px;
+        }
+
+        .table
+        {
+            text-align: center;
+            width: 1504px;
+            padding: 8px;
+            margin-left: 16px;
+            margin-right: 16px;
+            background-color: aqua; /* Màu nền của bảng */
+            color: black; /* Màu chữ trong bảng */
+            border-collapse: collapse; /* Gộp đường biên của ô để tránh khoảng trắng */
+        }
+
+        .table th, .table td 
+        {
+            border: 1px solid black; /* Đường biên của ô */
+            padding: 8px; /* Kích thước vàng xung quanh nội dung trong ô */
+        }
+
+    </style>
+</head>
+<body>
+<div class="bg">
+    <div class="label">Fullname_Customer</div>
+    <div class="label"><input type="text" name="fullname" id="fullname"></div>
+    <div class="label">Id_Pro</div>
+    <div class="label"><input type="text" name="id_pro" id="id_pro"></div>
+    <div class="label">Name_Pro</div>
+    <div class="label"><input type="text" name="name_pro" id="name_pro"></div>
+    <div class="label">Quantity_pro</div>
+    <div class="label"><input type="text" name="quantity_pro" id="quantity_pro"></div>
+    <div class="label">Price_pro</div>
+    <div class="label"><input type="text" name="price_pro" id="price_pro"></div>
+    <br>
+    <div class="action">
+    <button class="kk" onclick="Save()">Save</button>
+    <button class="kk" onclick="Show()">Show</button>
+    <button onclick="Reset()">Reset</button>
+    </div>
+    <br>                                                                                              
+    <table class="table" border="2">
+        <thead>
+            <tr>
+                <th>Auto_Increment</th>
+                <th>Fullname_Customer</th>
+                <th>Id_Pro</th>
+                <th>Name_Pro</th>
+                <th>Quantity_pro</th>
+                <th>Price_pro</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="tbl"></tbody>
+    </table>
+</div>
+</body>
+</html>
