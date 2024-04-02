@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(221, 44, 162);
+    color: #e60794;
+    /* Màu chữ trắng */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    /* Đặt margin top và bottom là 50px, left và right là auto */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Màu nền trắng với độ trong suốt 90% */
+    border-radius: 10px;
+    /* Bo tròn viền container */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    /* Đổ bóng cho container */
+}
+
+h2 {
+    color: #08b8cb;
+    /* Màu chữ xanh của tiêu đề */
+    margin-bottom: 20px;
+    /* Khoảng cách giữa các tiêu đề */
+}
+
+input[type="text"],
+select,
+input[type="button"] {
+    width: calc(100% - 22px);
+    /* Độ rộng tự động thích ứng */
+    max-width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #08b8cb;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Màu nền trắng với độ trong suốt 80% */
+    color: #333;
+    /* Màu chữ đen */
+}
+
+input[type="button"] {
+    background-color: #08b8cb;
+    /* Màu nền nút */
+    color: #fff;
+    /* Màu chữ nút */
+    border: none;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #213b57;
+    /* Màu nền nút khi di chuột */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Màu nền trắng với độ trong suốt 90% */
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    /* Tránh hiện tượng vượt khỏi khung khi có shadow */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    margin: 5px 0;
+}
+
+.card-buttons button {
+    padding: 5px 10px;
+    background-color: #2a2a2a;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.card-buttons button:hover {
+    background-color: #213b57;
+}
+
+/* Additional styles for the edit form */
+#editForm {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Màu nền trắng với độ trong suốt 80% */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#editForm input[type="button"] {
+    margin-top: 20px;
+}
